@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文字换行</title>
+    <style>
+        p{
+            border: 1px solid #258;
+            width: 100px;
+            /* word-spacing: 2em; */
+            letter-spacing: 0.3em;
+            /* line-break: loose; */
+        }
+
+        #p1{
+            /* word-wrap: break-word; */
+        }
+
+        #p2{
+            word-break: break-all;
+        }
+        
+    </style>
+</head>
+<body>
+    <p id="p1">
+        hellossssssssssssssssss 这是一个宽度有限的p 标签，文字的长度将要朝过它的宽度
+    </p>
+
+    <p id="p2">
+        hellossssssssssssssssss 这是一个宽度有限的p 标签，文字的长度将要朝过它的宽度
+    </p>
+
+    <h3>
+            word-wrap:break-word与word-break:break-all共同点是都能把长单词强行断句，不同点是word-wrap:break-word会首先起一个新行来放置长单词，新的行还是放不下这个长单词则会对长单词进行强制断句；而word-break:break-all则不会把长单词放在一个新行里，当这一行放不下的时候就直接强制断句了。
+    </h3>
+</body>
+</html>

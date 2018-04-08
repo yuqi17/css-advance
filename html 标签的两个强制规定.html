@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text Overflow</title>
+    <style>
+    p{
+        border: 1px solid;
+        color:red;
+    }
+    div{
+        color:blue;
+    }
+    </style>
+</head>
+<body>
+    <h3>1.行级元素内只能嵌套行级元素，块级元素可以嵌套任何元素
+        除了 <em>p 标签</em>,如下：p 标签中嵌入div标签实际上div 
+        标签将从p 标签中排出到外面。
+    </h3>
+    <p>
+        world
+        <div>hello</div>
+    </p>
+
+    <h3>
+        2.a 标签里面不可以嵌套a 标签。实际上里面的a 标签将会排出到外面。
+    </h3>
+    <a href="#1">
+        outter
+        <a href="#2">
+            inner
+        </a>
+    </a>
+</body>
+</html>

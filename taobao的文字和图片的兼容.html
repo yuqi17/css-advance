@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* 不加载css 相当于css 被注释 */
+    a.test1{
+        border:1px solid;
+        display: inline-block;
+        text-decoration: none;
+        background:url(http://p1.music.126.net/jrrHggxUf2fLDo16oDFuYw==/1396379783473592.jpg?param=180y180);
+        background-size:180px 180px;
+        /* 宽高也是必须的 */
+        width: 180px;
+        height: 180px;
+        background-repeat: no-repeat;
+        /* 第一种 把文字缩进出去 然后隐藏溢出部分 */
+        text-indent: 180px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    a.test2{
+        border:1px solid;
+        display: inline-block;
+        text-decoration: none;
+        background:url(http://p1.music.126.net/jrrHggxUf2fLDo16oDFuYw==/1396379783473592.jpg?param=180y180);
+        background-size:180px 180px;
+        background-repeat: no-repeat;
+        width: 180px;
+        /* 第二种 a 标签高度为0,文字被挤出来 */
+        height: 0px;
+        /* padding 会将容器撑开，而且padding 中可以显示背景 */
+        padding-top: 180px;
+        overflow: hidden;
+        
+    }
+    </style>
+</head>
+<body>
+    <h3>
+        淘宝网是一个国际化的大型网站。考虑到在网速比较低的情况下，css和javascript 可能会
+        失效。所以当图片不能够加载时，会用链接来代替图片。这样就有了图片和文字
+        兼容的技术。目前有两种方案。
+    </h3>
+
+    <a  class="test1"
+        href = 'music.163.com'>
+        网易音乐
+    </a>
+
+    <br> <br>
+
+    <a  class="test2"
+        href = 'music.163.com'>
+        网易音乐
+    </a>
+</body>
+</html>

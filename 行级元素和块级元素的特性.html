@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+    1.img 默认是inline-block,inline 是都具有文本分隔符的特性
+    也就是两个文字之间不管有多少空格，都只会在网页上以一个文本分隔符
+    显示。
+    </h3>
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    和
+    <img src="" alt=""><img src="" alt=""><img src="" alt="">
+    的显示是不同的。
+
+    <h3>
+    2.inline 标签如果设置了下面的样式的一种：
+    （1）position:absolute;
+     (2) float:right/left;
+     标签将会内部转化为:display:inline-block;
+    </h3>
+
+    <style>
+    /* #s2{
+         position: absolute;
+         background:red;
+         height: 100px;
+         width: 100px;
+     }*/
+    </style>
+    <span id="s2">
+
+    </span> 
+
+
+    <p></p>
+
+
+    <h3>
+    3.一个行级块元素和一个行级元素在一起，并且行级块元素内部有文字，
+    则不管内部文字大小，外部文字都将于内部文字底部对齐。
+    </h3>
+
+    <style>
+    .ib{
+        display: inline-block;
+        font-size: 50px;
+        width: 500px;
+        border:1px solid;
+
+        /*可以调整底部对齐方式的css 样式*/
+        vertical-align: 100px;
+    }
+    </style>
+    <span class="ib">
+        display:inline-block
+    </span>outer words
+
+
+    <h3>
+        4.左右两边浮动，中间留白
+    </h3>
+
+    <style>
+    .left{
+        float: left;
+        width: 300px;
+        height: 20px;
+        background: red;
+    }
+    .right{
+        float: right;
+        width: 50%;
+        height: 20px;
+        background: blue;
+    }
+    </style>
+    <div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

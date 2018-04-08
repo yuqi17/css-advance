@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* 只对块级元素有效 */
+    #p1{
+        border: 1px solid;
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    </style>
+</head>
+<body>
+    <h3>一行文本溢出显示三个点</h3>
+    <p id="p1">
+    ｛
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+        opacity: 1;
+        transition: all 0.9s cubic-bezier(0.4, 0, 0.33, 0.99) 0.5s;
+     ｝
+    </p>
+    <em>多行可以用css3来做，通常直接隐藏溢出</em>
+</body>
+</html>
