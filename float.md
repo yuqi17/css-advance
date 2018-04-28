@@ -45,7 +45,7 @@
             border: 1px solid;
         }
 
-        p{
+        .clearfix{
             /* background:#00bebe; */
             /* 这一句决定了p 标签是否被浮动流影响 */
             clear:both;
@@ -63,8 +63,10 @@
          <!-- 浮动流 -->
         <div class="box">4</div>
          <!-- 浮动流 -->
-         <p></p>
+         <p class='clearfix'></p>
     </div>
 </body>
 ```
+
+
 
