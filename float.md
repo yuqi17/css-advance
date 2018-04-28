@@ -88,3 +88,74 @@
 position:absolute;和float:left/right 设置之后，系统内部会默认将display 设置成inline-block;也可以知道如果原来是inline 的元素
 设置完了上面的两种后，将可以设置宽高，比如：span标签。
 # 如何让一个图标被文字环绕，img{float:left;margin-right:10px}
+
+## 用浮动做菜单的思路：
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            text-decoration: none;
+            color:#00bebe;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .menu-item{
+            float: left;
+            height: 30px;
+            width: 100px;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+
+        li.menu-item > a{
+            display: block;
+            border-radius: 6px;
+            height: 30px;
+            padding: 0 10px;
+            line-height: 30px;
+        }
+
+        li.menu-item > a:hover{
+            background: #00bebe;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <ul class="menu">
+        <li class="menu-item">
+            <a href="#">1</a>
+        </li>
+        <li class="menu-item">
+            <a href="#">2</a>
+        </li>
+        <li class="menu-item">
+            <a href="#">3</a>
+        </li>
+    </ul>
+    <p>不会被浮动影响</p>
+
+</body>
+
+</html>
+```
