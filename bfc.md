@@ -36,7 +36,7 @@
 </body>
 ```
 
-## 2.margin 合并
+## 2.margin 合并 （没有解决的必要，margin-bottom:20px；）
 ```html
  <style>
     *{
