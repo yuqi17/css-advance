@@ -77,4 +77,13 @@
         clear:both;
     }
 ```
+## 让父容器包裹子元素的：第三种解决办法：让父级元素变成BFC 比如：
+``` css
+    .wrapper{
+        float:left;//display:inline-block//position:absolute;
+    }
+```
 
+# 高级知识点：
+position:absolute;和float:left/right 设置之后，系统内部会默认将display 设置成inline-block;也可以知道如果原来是inline 的元素
+设置完了上面的两种后，将可以设置宽高，比如：span标签。
