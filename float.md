@@ -87,3 +87,4 @@
 # 高级知识点：
 position:absolute;和float:left/right 设置之后，系统内部会默认将display 设置成inline-block;也可以知道如果原来是inline 的元素
 设置完了上面的两种后，将可以设置宽高，比如：span标签。
+# 如何让一个图标被文字环绕，img{float:left;margin-right:10px}
