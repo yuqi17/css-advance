@@ -68,5 +68,13 @@
 </body>
 ```
 
-
+## 让父容器包裹子元素的：第二种解决办法：不加新的标签
+```css
+    .wrapper::after{
+        content:"";
+        /*必须是块级元素才能够清浮动*/
+        display:block;
+        clear:both;
+    }
+```
 
