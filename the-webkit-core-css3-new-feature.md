@@ -1,7 +1,13 @@
 
-```css
+``` css
     手机端点击出现阴影
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     去掉浏览器默认样式
-   -webkit-appearance:none;
+    //多行文本...省略号
+   -webkit-appearance:none;
+     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+ 
 ```
