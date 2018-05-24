@@ -10,5 +10,6 @@
     /*!autoprefixer off*/
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    /*!autoprefixer: on */ 
  
 ```
