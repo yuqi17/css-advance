@@ -164,3 +164,89 @@ forwards|表示动画是否在改变后不再回到初始状态
 
 </html>
 ```
+
+### 复合变换动画 下面的变换，如果交换了顺序将不会达到一个向前滚动的圆形的效果。
+- 1.
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .circle{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            border-radius: 100px;
+            text-align: center;
+            line-height: 100px;
+            animation-name: move;
+            animation-timing-function: linear;
+            animation-duration: 3s;
+            animation-fill-mode:forwards
+        }
+
+        @keyframes move{
+            from{
+                transform: translateX(0) rotateZ(0deg)
+            }
+            to{
+                transform: translateX(500px) rotateZ(360deg)
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="circle">6</div>
+</body>
+</html>
+```
+- 2 圆形螺旋到指定的水平位置
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .circle{
+
+            position: absolute;
+            left:300px;
+            top: 300px;
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            border-radius: 100px;
+            text-align: center;
+            line-height: 100px;
+            animation-name: move;
+            animation-timing-function: linear;
+            animation-duration: 3s;
+            animation-fill-mode:forwards
+        }
+
+        @keyframes move{
+            from{
+                transform:  rotateZ(0deg) translateX(0)
+            }
+            to{
+                transform:  rotateZ(360deg) translateX(500px)
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="circle">6</div>
+</body>
+</html>
+```
