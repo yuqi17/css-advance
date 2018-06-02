@@ -14,12 +14,12 @@ forwards|表示动画是否在改变后不再回到初始状态
 而且覆盖的规则是css 中设置的最后一个class 为最后的样式。
 - 3.真正能够实现同一个元素执行不同的动画要这么写：分别设置动画样式，每个样式用逗号分隔。
 ``` css
--webkit-animation-name:bounceInLeft1, bounce1;
--webkit-animation-duration:2s, 1.5s;
--webkit-animation-timing-function:ease, linear;
--webkit-animation-delay:5.2s, 7.2s;
--webkit-animation-iteration-count:1, infinite;
--webkit-animation-fill-mode:forwards, none;
+animation-name:bounceInLeft1, bounce1;
+animation-duration:2s, 1.5s;
+animation-timing-function:ease, linear;
+animation-delay:5.2s, 7.2s;/*特别注意的地方就是这个delay一定要前面执行的动画的延迟时间比后面的小才行,不然只执行后面的动画*/
+animation-iteration-count:1, infinite;
+animation-fill-mode:forwards, none;
 ```
 
 ### 示例
