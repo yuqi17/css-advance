@@ -3,6 +3,14 @@
 ### 先申明这个demo 我不是原作者
 ##### 没有想到box-shadow 还可以设置多个值！！
 
+ ## css3 中可以设置多个值在一个样式属性的情况有很多。比如background-image,srcset,box-shadow ....
+ - like this.每个部分都是相当于一个模糊的矩形，但矩形只能在原来元素的下面和周围，不能遮挡原来的元素。
+ ```css
+       box-shadow: 10px 50px 12px 1px  black,
+      1px 100px 12px 1px  red;
+ 
+ ```
+
 ``` html
 <!DOCTYPE html>  
 <html lang="en">  
