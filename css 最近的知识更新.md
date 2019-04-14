@@ -10,3 +10,4 @@
 #### 8. [js 正宗读取 css 样式的办法,可以用来验证css语法](https://blog.csdn.net/k358971707/article/details/54590490)
 #### 9. point-events:none 只有再z-index 不为-1,且是父子节点的情况下生效(还未验证)
 #### 10. 伪元素:after,:before 相当于是父元素的一个子元素,其属性根子元素一般继承规则一样(display是不继承的),content必须设置哪怕是"",否则不显示.
+#### 11. white-space:nowrap; 会保证inline* 元素 在一行显示
