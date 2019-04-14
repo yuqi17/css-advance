@@ -8,4 +8,5 @@
 #### 6. css 属性 关键字unset all revert initial inherit  [参考]( http://www.cnblogs.com/xiaohuochai/p/5464456.html)
 #### 7. none 和 auto 自适应的意思 (要看实际情况) [参考 margin:auto](http://zh.learnlayout.com/margin-auto.html)
 #### 8. [js 正宗读取 css 样式的办法,可以用来验证css语法](https://blog.csdn.net/k358971707/article/details/54590490)
-#### 9. point-events:none 只有再z-index 不为-1,且是父子节点的情况下生效
+#### 9. point-events:none 只有再z-index 不为-1,且是父子节点的情况下生效(还未验证)
+#### 10. 伪元素:after,:before 相当于是父元素的一个子元素,其属性根子元素一般继承规则一样(display是不继承的),content必须设置哪怕是"",否则不显示.
