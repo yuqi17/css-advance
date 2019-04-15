@@ -82,3 +82,4 @@ function getStyle(selector, arr) {
 </html>
 ```
 #### 11. white-space:nowrap; 会保证inline* 元素 在一行显示
+#### 12. position:fixed 会导致不能进行滚动.必须明确给定overflow:scroll; 在taro 中.page 中最好不要用fixed做壳子.
