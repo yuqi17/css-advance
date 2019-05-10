@@ -1,7 +1,7 @@
 
 #### - 查看css 文档一定要看默认值,默认值,默认值!!!
 
-#### - 实践的时候一定要注意不同浏览器的基础差异 ```css *{margin:0;padding:0; box-sizing:border-box}``` 然后再去看
+#### - 实践的时候一定要注意不同浏览器的基础差异然后再去看,推荐使用标准化css 库:sanitize.css,normalize.css,minireset.css,unstyle.css
 
 #### - 定位 position 的几个值必须要明白,特别是z-index 的设置是难点基础之一
 
