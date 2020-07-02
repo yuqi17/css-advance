@@ -80,3 +80,78 @@
 </html>
 
 ```
+
+另有一种更加顺畅的体验，而且可以适用于不定宽度的菜单，不过需要js:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #2c3e50;
+    }
+
+    nav {
+      width: 700px;
+      height: 50px;
+      box-shadow: 1px 1px 12px 12px rgba(0, 0, 0, .1);
+      border-radius: 8px;
+      background-color: #34495e;
+      display: flex;
+      justify-content: space-around;
+      line-height: 50px;
+      position: relative;
+      z-index: 0;
+    }
+
+    .item {
+      padding: 0 10px;
+      color: #fff;
+    }
+
+    #slider {
+      position: absolute;
+      background-color: aqua;
+      height: 80%;
+      /* (100 - 80 )/2 */
+      top: 10%;
+      z-index: -1;
+      transition: .3s ease;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="item" onclick="test(event)">111111</div>
+    <div class="item" onclick="test(event)">222222</div>
+    <div class="item" onclick="test(event)">33332222222</div>
+    <div class="item" onclick="test(event)">33332222222</div>
+    <div class="item" onclick="test(event)">asdfasdf</div>
+    <div class="item" onclick="test(event)">33332222222</div>
+    <div id="slider"></div>
+  </nav>
+</body>
+<script>
+  function test(e) {
+    const rect = e.target.getBoundingClientRect();
+    const slider = document.getElementById('slider')
+    slider.style.left = `${rect.left}px`
+    slider.style.width = `${rect.width}px`
+  }
+</script>
+
+</html>
+```
